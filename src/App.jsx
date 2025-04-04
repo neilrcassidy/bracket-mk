@@ -1,13 +1,16 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 
-function App() {
-  //const [count, setCount] = useState(0)
+import { Form } from './components'
+
+const App = () => {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div className='w-screen h-screen absolute'>
+        <Form />
+      </div>
     </>
   )
 }
